@@ -1,0 +1,111 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+.container{
+    background-color: rgb(97, 102, 97);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calculator{
+    background-color: rgb(17, 11, 23);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.calculator form input{
+    border: 0;
+    outline: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    box-shadow: -8px -8px 15px rgba(97, 9, 151, 0.91), 5px 5px 15px rgba(161, 3, 213, 0.981);
+    background: transparent;
+    font-size: 20px;
+    color: rgb(255, 251, 0);
+    margin: 10px;
+    cursor: pointer;
+}
+
+.display{
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 0;
+    border: 2px solid rgb(59, 203, 201);
+}
+
+form .display input{
+    text-align: right;
+    flex: 1;
+    font-size: 35px;
+    box-shadow: none;
+}
+
+form input.equal{
+    width: 145px;
+    color: rgb(29, 189, 210);
+}
+
+form input.operator{
+    color: rgb(16, 222, 230);
+}
+
+.extra-buttons{
+    display: none;
+}
+
+.menu-1, .menu-2{
+    font-size: 1em ;
+    margin: 10px;
+    color: aliceblue;
+    cursor: pointer;
+}
+
+.menu > i {
+    color: antiquewhite;
+    font-size: 20px;
+}
+
+/*----------------------------------------Responsive---------------------------------------------------*/
+
+
+@media only screen and (max-width : 400px){
+    .calculator{
+        padding: 15px;
+    }
+
+    .calculator form input{
+        width: 40px;
+        height: 40px;
+        font-size: 15px;
+        margin: 8px;
+    }
+
+    form input.equal{
+        width: 100px;
+    }
+}
+
+@media only screen and (max-width : 270px){
+    .calculator{
+        padding: 10px;
+    }
+
+    .calculator form input{
+        width: 30px;
+        height: 30px;
+        font-size: 10px;
+        margin: 5px;
+    }
+
+    form input.equal{
+        width: 80px;
+    }
+}
